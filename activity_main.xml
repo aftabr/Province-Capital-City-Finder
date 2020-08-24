@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_SelectProvinces"
+        android:layout_width="269dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="104dp"
+        android:text="Select Province"
+        android:onClick="selectprovinces"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tV_SelectedInfo"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="76dp"
+        android:text="Selected Province Info:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_SelectProvinces" />
+
+    <TextView
+        android:id="@+id/tV_ProvinceName"
+        android:layout_width="152dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        android:text="Province Name:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tV_SelectedInfo" />
+
+    <TextView
+        android:id="@+id/tV_CapitalName"
+        android:layout_width="135dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="64dp"
+        android:text="Capital City:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tV_ProvinceName" />
+
+    <TextView
+        android:id="@+id/tV_Province"
+        android:layout_width="152dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tV_ProvinceName"
+        app:layout_constraintTop_toBottomOf="@+id/tV_SelectedInfo" />
+
+    <TextView
+        android:id="@+id/tV_Capital"
+        android:layout_width="152dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tV_CapitalName"
+        app:layout_constraintTop_toBottomOf="@+id/tV_Province" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
